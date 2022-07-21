@@ -21,7 +21,12 @@ router.get('/tasks/:id', async (ctx) =>
     ctx.body = await readOneTask(ctx.params.id));
 
 router.put('/tasks/:id', async (ctx) =>
-    ctx.body = await updateTask(ctx.params.id, ctx.request.body.name, ctx.request.body.description));
+    ctx.body = await updateTask(
+        ctx.params.id,
+        ctx.request.body.name,
+        ctx.request.body.description,
+        ctx.request.body.status
+    ));
 
 router.delete('/tasks/:id', async (ctx) =>
     ctx.body = await deleteTask(ctx.params.id));

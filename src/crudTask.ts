@@ -16,9 +16,9 @@ export const readOneTask = async (id: string) => {
     return await prisma.task.findUnique({ where: { id } })
 }
 
-export const updateTask = async (id: string, name: string, description: string) => {
+export const updateTask = async (id: string, name: string, description: string, status: 'OPEN' | 'IN_PROGRESS' | 'DONE') => {
     return await prisma.task.update({
-        data: { name, description },
+        data: { name, description, status },
         where: { id }
     })
 }
