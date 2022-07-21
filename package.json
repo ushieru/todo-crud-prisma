@@ -1,0 +1,24 @@
+{
+  "name": "prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ushieru Kokoran (https://ushieru.com/)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "node esbuild.dev.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.1.0",
+    "@types/koa": "^2.13.5",
+    "@types/node": "^18.0.6",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-router": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/koa-router": "^7.4.4",
+    "esbuild": "^0.14.49",
+    "prisma": "^4.1.0"
+  }
+}
