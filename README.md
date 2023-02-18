@@ -6,3 +6,7 @@
 npm i
 npm run prisma:setup
 ```
+## Start
+```sh
+npm start
+```
