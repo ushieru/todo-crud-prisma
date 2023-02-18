@@ -1,9 +1,10 @@
 import Koa from 'koa';
 import Router from 'koa-router';
 import koaBody from 'koa-body';
-import { createTask, readTasks, readOneTask, updateTask, deleteTask } from './crudTask'
+import { createTask, readTasks, readOneTask, updateTask, deleteTask } from './CRUDTask'
 
 const app = new Koa();
+const port = process.env.PORT ?? 3000
 
 app.use(koaBody({ jsonLimit: '5kb' }));
 
@@ -33,4 +34,4 @@ router.delete('/tasks/:id', async (ctx) =>
 
 app.use(router.routes());
 
-app.listen(3000);
+app.listen(port, () => console.log('Koa is Listening at http://localhost:%i/', port))

@@ -1,24 +1,30 @@
 {
-  "name": "prisma",
+  "name": "todo-crud-prisma",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Ushieru Kokoran (https://ushieru.com/)",
-  "license": "MIT",
-  "type": "module",
+  "description": "",
+  "main": "esbuild.dev.js",
   "scripts": {
-    "dev": "node esbuild.dev.js"
+    "start": "npm run build && node dist",
+    "dev": "node esbuild.dev.cjs",
+    "build": "esbuild src/index.ts --bundle --minify --platform=node --target=node18 --packages=external --outfile=dist/index.js",
+    "prisma:setup": "npm run prisma:generate && npm run prisma:push",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^4.1.0",
-    "@types/koa": "^2.13.5",
-    "@types/node": "^18.0.6",
-    "koa": "^2.13.4",
-    "koa-body": "^5.0.0",
+    "@prisma/client": "^4.10.1",
+    "koa": "^2.14.1",
+    "koa-body": "^6.0.1",
     "koa-router": "^12.0.0"
   },
   "devDependencies": {
+    "@types/node": "^18.14.0",
+    "@types/koa": "^2.13.5",
     "@types/koa-router": "^7.4.4",
-    "esbuild": "^0.14.49",
-    "prisma": "^4.1.0"
+    "esbuild": "^0.17.8",
+    "prisma": "^4.10.1"
   }
 }
