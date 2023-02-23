@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Learn about Prototypal Inheritance",
+        "description": "The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects."
+    },
+    {
+        "name": "Learn about Prototypes",
+        "description": "JavaScript is an object-oriented language built around a prototype model."
+    },
+    {
+        "name": "Learn about Keyed Collections",
+        "description": "Keyed collections are data collections that are ordered by key not index. They are associative in nature."
+    },
+    {
+        "name": "Learn about Typed Arrays",
+        "description": "In Javascript, a typed array is an array-like buffer of binary data. There is no JavaScript property or object named TypedArray, but properties and methods can be used with typed array objects."
+    },
+    {
+        "name": "Learn about Equality algorithms",
+        "description": "Equality algorithms are used to perform equality comparisons of values or variables in JavaScript. Each equality algorithm works slightly differently, and the one you use depends on the type of comparison you want to make."
+    },
+    {
+        "name": "Learn about Event Loop",
+        "description": "The Event Loop is one of the most important aspects to understand about Node.js."
+    },
+    {
+        "name": "Learn about Javascript Iterators and Generators",
+        "description": "Iterators and generators, introduced into JavaScript with ECMAScript 6, represent an extremely useful concept related to iteration in the language."
+    },
+    {
+        "name": "Learn about Memory lifecycle",
+        "description": "Regardless of the programming language, the memory life cycle is pretty much always the same: Allocate the memory you need, Use the allocated memory (read, write), Release the allocated memory when it is not needed anymore"
+    },
+    {
+        "name": "Learn about Garbage Collection",
+        "description": "Memory management in JavaScript is performed automatically and invisibly to us."
+    },
+    {
+        "name": "Learn about Debugging Memory Leaks",
+        "description": "In JavaScript, memory leaks commonly occur within heap allocated memory, where short lived objects are attached to long lived ones and the Garbage Collector cannot safely de-allocate that memory as it is still referenced from the root set (the global object)."
+    },
+    {
+        "name": "Learn about Debugging performance",
+        "description": "Enter the dev tools and check out the Lighthouse tab. This is essentially a series of tests which analyses the currently open website on a bunch of metrics related to performance, page speed, accessibility, etc."
+    },
+    {
+        "name": "Learn about Nodejs Threads",
+        "description": "Node.js is a single-threaded language and gives us ways to work parallelly to our main process. Taking note of nowadays multicore system single threading is very memory efficient."
+    },
+    {
+        "name": "Learn about Nodejs streams",
+        "description": "Streams are a type of data handling methods and are used to read, write or transform chunks of data piece by piece without keeping it in memory all at once."
+    },
+    {
+        "name": "Learn about npm workspaces",
+        "description": "Workspace is a generic term that refers to the set of npm CLI features that support managing multiple packages from your local file system from within a singular top-level root package."
+    },
+    {
+        "name": "Learn about Node Inspect",
+        "description": "Node.js provides a built-in DevTools-based debugger to allow debugging Node.js applications."
+    },
+    {
+        "name": "Learn about Pm2",
+        "description": "PM2 is a production process manager for Node.js applications with a built-in load balancer."
+    },
+    {
+        "name": "Learn about esbuild",
+        "description": "An extremely fast bundler for the web"
+    },
+    {
+        "name": "Learn about Playwright",
+        "description": "Reliable end-to-end testing for modern web apps."
+    },
+    {
+        "name": "Learn about Deno",
+        "description": "Deno is a simple, modern runtime for JavaScript and TypeScript that uses V8 and is built in Rust."
+    },
+    {
+        "name": "Learn about Deno Interoperating with Node.js and npm",
+        "description": "Though Deno is powerful, many people will want to leverage code and libraries that are built for Node, in particular the large set of packages available on the npm registry."
+    }
+]
