@@ -1,7 +1,7 @@
 import Koa from 'koa';
 import Router from 'koa-router';
 import koaBody from 'koa-body';
-import { createTask, readTasks, readOneTask, updateTask, deleteTask } from './CRUDTask'
+import { createTask, readTasks, readOneTask, updateTask, deleteTask, sqliteVersion } from './CRUDTask'
 
 const app = new Koa();
 const port = process.env.PORT ?? 3000
@@ -11,6 +11,8 @@ app.use(koaBody({ jsonLimit: '5kb' }));
 const router = new Router();
 
 router.get('/', (ctx) => ctx.body = 'Hello World');
+
+router.get('/version', async (ctx) => ctx.body = await sqliteVersion());
 
 router.post('/tasks', async (ctx) =>
     ctx.body = await createTask(ctx.request.body.name, ctx.request.body.description));

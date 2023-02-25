@@ -26,3 +26,5 @@ export const updateTask = async (id: string, name: string, description: string, 
 export const deleteTask = async (id: string) => {
     return await prisma.task.delete({ where: { id } })
 }
+
+export const sqliteVersion = async () => await prisma.$queryRaw`SELECT sqlite_version()`;
