@@ -4,7 +4,7 @@ const esbuild = require('esbuild');
 const outfile = 'dist/index.js'
 
 let server;
-const startServer = (message) => {
+const startServer = () => {
     if (server) server.kill('SIGINT')
     server = spawn('node', [outfile], { stdio: 'inherit' })
 }
