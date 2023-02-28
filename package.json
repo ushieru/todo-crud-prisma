@@ -10,7 +10,8 @@
     "prisma:setup": "npm run prisma:generate && npm run prisma:push && npm run prisma:seed",
     "prisma:generate": "prisma generate",
     "prisma:push": "prisma db push",
-    "prisma:seed": "prisma db seed"
+    "prisma:seed": "prisma db seed",
+    "prisma:studio": "prisma studio"
   },
   "keywords": [],
   "author": "",
